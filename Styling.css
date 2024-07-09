@@ -6,6 +6,7 @@
 }
 
 #navbar{
+    background-color: rgb(201, 200, 200);;
     width: 100%;
     height:48px;
     top:0;
@@ -18,7 +19,7 @@
 }
 
 #navbar.sticky{
-    background-color: rgb(201, 200, 200);
+    background-color: white;
     transition: 0.5s;
 }
 
