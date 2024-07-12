@@ -5,12 +5,28 @@
     box-sizing: border-box;
 }
 
+body{
+    width: 100%;
+    min-height: 200vh;
+}
+.main{
+    width:100%;
+    height:100vh;
+    background-image: url("Images/Printer2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+    position: relative;
+}
+
 #navbar{
     background-color:transparent;
     width: 100%;
     height:48px;
     top:0;
     left: 0;
+    padding:10px;
+    align-items: center;
     justify-content:space-between;
     display: flex;
     z-index: 100000;
@@ -19,7 +35,7 @@
 }
 
 #navbar.sticky{
-    background-color: white;
+    background-color: black;
     transition: 0.5s;
 }
 
@@ -30,7 +46,7 @@
 #navbar h1{
     color:black;
     align-self: center;
-    padding: 15px;
+    padding-left: 5px;
     letter-spacing: .3px;
     
 }
@@ -50,6 +66,7 @@
     text-decoration: none;
     padding: 10px;
     color:black;
+    font-weight: bold;
     margin-left: 14px;
     letter-spacing: .7px;
     font-weight: 100;
@@ -57,50 +74,32 @@
     position: relative;
 }
 
-#navbar ul a::after{
+#navbar ul a::before{
     content:"";
     height: 3px;
     width: 0%;
-    background-color: black;
+    background-color: green;
     left: 0;
     position:absolute;
-    bottom: -0.8px;
+    bottom: -0.12px;
     border-radius: 20px;
     transition: all 0.4s;
     pointer-events: none;
 }
-#navbar ul a:hover::after{
+#navbar ul a:hover::before{
     width:100%
 }
 
-#navbar ul a:hover,#navbar a:focus {
+/* #navbar ul a:hover,#navbar a:focus {
     color:rgb(186, 234, 186);
-}
-
-body{
-    width: 100%;
-    min-height: 200vh;
-    background-image: url("Images/Printer2.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: inherit;
-    /* background-color: green; */
-    /* rgb(186, 234, 186); */
-}
-/* #subContainer{
-    width: 100%;
-    height: 100vh;
-    background-image: url("Images/Printer1.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
 } */
 
-#infoHome{
+
+
+/* #infoHome{
     width:50%;
     height:35%;
-    /* background-color: red; */
+    background-color: red;
     margin: auto;
     position: absolute;
     top:50%;
@@ -134,4 +133,12 @@ body{
     color: white;
     border: 2px solid rgb(186, 234, 186);
 
+ } */
+
+ #Services{
+    background-color: red;
+    margin-top: 700px;
+    width: 100%;
+    height:100vh;
+    position: absolute;
  }
