@@ -6,7 +6,7 @@
 }
 
 #navbar{
-    background-color: rgb(201, 200, 200);;
+    background-color:transparent;
     width: 100%;
     height:48px;
     top:0;
@@ -23,9 +23,9 @@
     transition: 0.5s;
 }
 
-/* #navbar.sticky ul li a, #navbar.sticky h1{
+#navbar.sticky ul li a, #navbar.sticky h1{
     color:white;
-} */
+}
 
 #navbar h1{
     color:black;
@@ -77,12 +77,17 @@
     color:rgb(186, 234, 186);
 }
 
-.mainContainer{
+body{
     width: 100%;
-    height: 200vh;
-    background-color: rgb(186, 234, 186);
+    min-height: 200vh;
+    background-image: url("Images/Printer2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+    /* background-color: green; */
+    /* rgb(186, 234, 186); */
 }
-#subContainer{
+/* #subContainer{
     width: 100%;
     height: 100vh;
     background-image: url("Images/Printer1.webp");
@@ -90,7 +95,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
-}
+} */
 
 #infoHome{
     width:50%;
