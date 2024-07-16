@@ -95,6 +95,11 @@ body{
     width:100%
 }
 
+#navbar i .menu{
+    background-color: red;
+    color:black;
+}
+
 
 #Main #inspo{
     width:25%;
@@ -111,3 +116,10 @@ body{
     color:rgb(186, 234, 186);
 } */
 
+
+@media screen and (max-width: 300px){
+    #navbar ul a{
+        color: red;
+    }
+}
+    
