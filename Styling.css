@@ -7,10 +7,12 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    /* scrollbar-width: 0;
+    scroll-behavior: var(--color2); */
 }
 
 body{
-    width: 100%;
+    width: inherit;
     min-height: 500vh;
 }
 #Main{
@@ -24,9 +26,9 @@ body{
 }
 
 #navbar{
-    background-color:white;
+    background-color:var(--color1);
     width: 100%;
-    height:48px;
+    height:38px;
     top:0;
     left: 0;
     padding:10px;
@@ -39,13 +41,15 @@ body{
 }
 
 #navbar.sticky{
-    background-color: grey;
+    background-color:rgba(255, 255, 255, 0.3);
+    filter: blur(1px);
     transition: 0.7s;
 }
 
 #navbar.sticky ul li a, #navbar.sticky h1{
     /* color:white; */
-    color:var(--color1);
+    color:var(--color2);
+    font-weight: bold;
 }
 
 #navbar h1{
@@ -69,17 +73,18 @@ body{
 
 #navbar ul a{
     text-decoration: none;
-    padding: 10px;
+    padding: 8px;
     color:var(--color2);
     font-weight: bold;
-    margin-left: 14px;
-    letter-spacing: .7px;
+    margin-left: 10px;
+    letter-spacing: .3px;
     font-weight: 100;
-    font-size: 14px;
-    position: relative;
+    font-size: 13px;
+    transition:.4s;
+
 }
 
-#navbar ul a::before{
+/* #navbar ul a::before{
     content:"";
     height: 3px;
     width: 0%;
@@ -90,18 +95,22 @@ body{
     border-radius: 20px;
     transition: all 0.4s;
     pointer-events: none;
-}
-#navbar ul a:hover::before{
-    width:100%
-}
+} */
 
-#navbar i .menu{
-    background-color: red;
-    color:black;
+#navbar ul a:hover{
+    font-weight: bolder;
 }
 
+#navbar .fa-bars{
+ font-size: 25px;
+ /* background-color: red; */
+ /* font-weight: bolder; */
+ display: none;
 
-#Main #inspo{
+}
+
+
+#Main #inspo {
     width:25%;
     padding:10px;
     word-wrap: break-word;
@@ -110,16 +119,61 @@ body{
     top: 28%;
 }
 
+.Services{
+    background-color: rgba(238, 235, 235, 0.927);
+    width:100%;
+    height:100vh;
+    padding:12px;
+}
+
+ .Services h1{
+    /* background-color: aqua; */
+    font-size: 23px;
+    padding: 10px;
+    float: right;
+    margin-right: 120px;
+    letter-spacing: 6px;
+    font-weight: 200;
+    position: relative;
+}
+
+.Services h1::before{
+    content: "";
+    width:4px;
+    height:75%;
+    left: -2px;
+    position: absolute;
+    background-color: rgb(45, 99, 45);
+}
+
+ #service1 h2{
+    margin-top: 50px;
+    /* background-color: black; */
+    text-transform:uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+    padding:10px 0 10px 10px;
+    position: relative;
+}
+
+#service1 h2::before{
+    content: "";
+    width:4px;
+    height:75%;
+    left: 0;
+    position: absolute;
+    background-color: rgb(45, 99, 45);
+}
 
 
 /* #navbar ul a:hover,#navbar a:focus {
     color:rgb(186, 234, 186);
 } */
 
-
+/* 
 @media screen and (max-width: 300px){
     #navbar ul a{
         color: red;
     }
-}
+} */
     
